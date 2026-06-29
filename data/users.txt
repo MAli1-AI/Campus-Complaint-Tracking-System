@@ -1,0 +1,11 @@
+MGR-01,Admin Overseer,admin123,Manager
+RES-IT,IT Support,respass,Resolver,IT,false
+RES-ACAD,Academic Support,respass,Resolver,Academic,false
+RES-ADMIN,Admin Support,respass,Resolver,Administrative,false
+RES-INFRA,Infrastructure Support,respass,Resolver,Infrastructure,false
+RES-LIB,Library Support,respass,Resolver,Library,false
+RES-GEN,General Support,respass,Resolver,General,true
+STU-001,Ali Student,pass123,Student,Computer Science,3
+PROF-001,Dr. Ahmed,pass123,Professor,Computer Science,Associate Professor
+STF-001,John Staff,pass123,Staff,Admin Office
+STU-002,M.Ali Mughal,pass123,Student,CS,2
