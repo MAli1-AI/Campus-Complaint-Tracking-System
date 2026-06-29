@@ -14,17 +14,27 @@ Manual complaint handling in universities—paper forms, emails, and office visi
 
 ## ✨ Features
 
-- ✅ **5 User Roles** – Student, Professor, Staff, Manager, Resolver
-- ✅ **5 Complaint Categories** – Academic, Administrative, IT, Infrastructure, Library
-- ✅ **Role‑based Dashboards** – tailored views for each user type
-- ✅ **Priority & Deadline Calculation** – dynamic deadlines based on issue type and urgency
-- ✅ **Auto‑Assignment** – automatically assigns resolvers based on category and workload
-- ✅ **Sequential Status Updates** – 25% → 50% → 75% → 100%
-- ✅ **Feedback System** – 0–100% satisfaction rating
-- ✅ **File‑based Notifications** – real‑time alerts for all users
-- ✅ **Manager Reports** – resolver performance, complaint statistics, and overdue tracking
-- ✅ **Query & Reassign** – manager can query resolvers and reassign overdue complaints
-- ✅ **Resolver Flagging** – manager can flag/unflag resolvers to control workload
+- 🔹 **5 User Roles** – The system supports **Students**, **Professors**, **Staff**, **Managers**, and **Resolvers**. Each role has a dedicated dashboard with tailored permissions. Complainants can submit and track issues; Resolvers handle assigned tasks; Managers oversee the entire workflow and generate reports.
+
+- 🔹 **5 Complaint Categories** – Complaints are classified into **Academic**, **Administrative**, **IT**, **Infrastructure**, and **Library**. Each category has a unique set of issue types and point weights, ensuring that different problems (e.g., "Fire Hazard" vs. "Book Missing") are prioritized appropriately.
+
+- 🔹 **Role‑based Dashboards** – Every user sees a customized interface after login. Students and staff can submit complaints and view their history; Resolvers see only their active tasks; Managers access all complaints, statistics, and administrative tools—keeping the UI clean and focused.
+
+- 🔹 **Priority & Deadline Calculation** – Each complaint is assigned a **priority score** based on `Urgency Level (1–5)` + `Issue Points (3–15)`. This score is mapped to a specific deadline (from 7 days down to **1 hour** for critical issues like fire hazards). This ensures that urgent problems are handled immediately.
+
+- 🔹 **Auto‑Assignment of Resolvers** – When a complaint is submitted, the system automatically finds the best resolver based on **category expertise** and **current workload** (fewest pending complaints). If a resolver is flagged by the manager, they are temporarily excluded from new assignments.
+
+- 🔹 **Sequential Status Updates** – Resolvers cannot jump directly to 100%. They must follow a strict sequence: **25% (Read)** → **50% (In Progress)** → **75% (Near Completion)** → **100% (Resolved)**. This ensures every complaint is properly reviewed and processed.
+
+- 🔹 **Feedback System** – Once a complaint is resolved, the complainant can rate their satisfaction on a **0–100% slider**. The average feedback rating is visible to the manager in the resolver performance report, promoting accountability.
+
+- 🔹 **File‑based Notifications** – Every status change, query, or reassignment triggers a notification saved to `notifications.txt`. Users see these alerts in a dedicated panel, keeping everyone informed without requiring an internet connection.
+
+- 🔹 **Manager Reports & Analytics** – Managers can view detailed statistics (complaints per category, resolved vs. pending) and a **resolver performance dashboard** that shows average resolution time and average feedback for each resolver.
+
+- 🔹 **Query & Reassign** – If a complaint is overdue, the manager can send a **query** to the resolver. The resolver receives the query, responds, and the manager can view all responses. If needed, the manager can **reassign** the complaint to another resolver (which also extends the deadline by 48 hours).
+
+- 🔹 **Resolver Flagging** – Managers can **flag** underperforming resolvers. Flagged resolvers are automatically excluded from auto‑assignment and reassignment dropdowns until the manager unflags them—giving managers full control over workload distribution.
 
 ---
 
@@ -134,37 +144,32 @@ java com.campuscomplaint.Main
 
 ---
 
-### 9. Notifications Panel
-![Notifications](docs/images/notifications.JPG)
-
----
-
-### 10. Pending Queries (Resolver)
+### 9. Pending Queries (Resolver)
 ![Pending Queries](docs/images/pending-queries.JPG)
 
 ---
 
-### 11. Resolver Responses (Manager View)
+### 10. Resolver Responses (Manager View)
 ![Resolver Responses](docs/images/resolver-responses.JPG)
 
 ---
 
-### 12. Manager Dashboard – Submitted Tab
+### 11. Manager Dashboard – Submitted Tab
 ![Manager Dashboard](docs/images/manager-dashboard.JPG)
 
 ---
 
-### 13. Manager – Complaint Statistics
+### 12. Manager – Complaint Statistics
 ![Complaint Statistics](docs/images/complaint-statistics.JPG)
 
 ---
 
-### 14. Manager – Resolver Performance
+### 13. Manager – Resolver Performance
 ![Resolver Performance](docs/images/resolver-performance.JPG)
 
 ---
 
-### 15. Feedback Dialog
+### 14. Feedback Dialog
 ![Feedback](docs/images/complaint-feedback.JPG)
 
 ---
