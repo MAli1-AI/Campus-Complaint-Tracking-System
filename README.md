@@ -14,27 +14,26 @@ Manual complaint handling in universities—paper forms, emails, and office visi
 
 ## ✨ Features
 
-- 🔹 **5 User Roles** – The system supports **Students**, **Professors**, **Staff**, **Managers**, and **Resolvers**. Each role has a dedicated dashboard with tailored permissions. Complainants can submit and track issues; Resolvers handle assigned tasks; Managers oversee the entire workflow and generate reports.
+### 🔹 User Management
+- **5 User Roles** – Students, Professors, Staff, Managers, and Resolvers each have dedicated dashboards with tailored permissions.
+- **Role‑based Dashboards** – After login, users see only the tools relevant to their role – complainants submit/view complaints, resolvers manage tasks, managers oversee the entire system.
 
-- 🔹 **5 Complaint Categories** – Complaints are classified into **Academic**, **Administrative**, **IT**, **Infrastructure**, and **Library**. Each category has a unique set of issue types and point weights, ensuring that different problems (e.g., "Fire Hazard" vs. "Book Missing") are prioritized appropriately.
+### 🔹 Complaint Lifecycle
+- **5 Complaint Categories** – Academic, Administrative, IT, Infrastructure, and Library. Each category has its own set of issue types and point weights.
+- **Priority & Deadline Calculation** – Priority = `Urgency (1–5)` + `Issue Points (3–15)`. Mapped to deadlines from 7 days down to **1 hour** for critical issues (e.g., fire hazard).
+- **Sequential Status Updates** – Resolvers follow a strict sequence: **25% → 50% → 75% → 100%** – no skipping steps, ensuring thorough processing.
 
-- 🔹 **Role‑based Dashboards** – Every user sees a customized interface after login. Students and staff can submit complaints and view their history; Resolvers see only their active tasks; Managers access all complaints, statistics, and administrative tools—keeping the UI clean and focused.
+### 🔹 Automation & Intelligence
+- **Auto‑Assignment** – The system automatically finds the best resolver based on **category expertise** and **current workload** (fewest pending complaints). Flagged resolvers are excluded.
 
-- 🔹 **Priority & Deadline Calculation** – Each complaint is assigned a **priority score** based on `Urgency Level (1–5)` + `Issue Points (3–15)`. This score is mapped to a specific deadline (from 7 days down to **1 hour** for critical issues like fire hazards). This ensures that urgent problems are handled immediately.
+### 🔹 Feedback & Accountability
+- **Feedback System** – Complainants rate satisfaction on a **0–100% slider**. Average feedback appears in manager reports.
+- **File‑based Notifications** – Every status change, query, or reassignment triggers a notification saved to `notifications.txt` – users see them in a dedicated panel.
 
-- 🔹 **Auto‑Assignment of Resolvers** – When a complaint is submitted, the system automatically finds the best resolver based on **category expertise** and **current workload** (fewest pending complaints). If a resolver is flagged by the manager, they are temporarily excluded from new assignments.
-
-- 🔹 **Sequential Status Updates** – Resolvers cannot jump directly to 100%. They must follow a strict sequence: **25% (Read)** → **50% (In Progress)** → **75% (Near Completion)** → **100% (Resolved)**. This ensures every complaint is properly reviewed and processed.
-
-- 🔹 **Feedback System** – Once a complaint is resolved, the complainant can rate their satisfaction on a **0–100% slider**. The average feedback rating is visible to the manager in the resolver performance report, promoting accountability.
-
-- 🔹 **File‑based Notifications** – Every status change, query, or reassignment triggers a notification saved to `notifications.txt`. Users see these alerts in a dedicated panel, keeping everyone informed without requiring an internet connection.
-
-- 🔹 **Manager Reports & Analytics** – Managers can view detailed statistics (complaints per category, resolved vs. pending) and a **resolver performance dashboard** that shows average resolution time and average feedback for each resolver.
-
-- 🔹 **Query & Reassign** – If a complaint is overdue, the manager can send a **query** to the resolver. The resolver receives the query, responds, and the manager can view all responses. If needed, the manager can **reassign** the complaint to another resolver (which also extends the deadline by 48 hours).
-
-- 🔹 **Resolver Flagging** – Managers can **flag** underperforming resolvers. Flagged resolvers are automatically excluded from auto‑assignment and reassignment dropdowns until the manager unflags them—giving managers full control over workload distribution.
+### 🔹 Manager Oversight
+- **Manager Reports & Analytics** – View statistics per category (submitted, resolved, feedback) and a resolver performance dashboard (average resolution time & feedback).
+- **Query & Reassign** – Send queries to resolvers for overdue complaints; view resolver responses; reassign complaints (deadline extended by 48 hours).
+- **Resolver Flagging** – Flag underperforming resolvers to temporarily exclude them from new assignments.
 
 ---
 
