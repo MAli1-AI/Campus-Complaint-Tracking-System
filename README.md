@@ -95,77 +95,77 @@ java com.campuscomplaint.Main
 *(All screenshots are stored in `docs/images/`)*
 
 ### 1. Splash Screen
-![Splash Screen](docs/images/splash-screen.jpg)
+![Splash Screen](docs/images/splash-screen.JPG)
 
 ---
 
 ### 2. Login Screen
-![Login Screen](docs/images/login.jpg)
+![Login Screen](docs/images/login.JPG)
 
 ---
 
 ### 3. Sign Up (Student/Professor/Staff)
-![Sign Up](docs/images/signup.jpg)
+![Sign Up](docs/images/signup.JPG)
 
 ---
 
 ### 4. Complainant Dashboard
-![Student Dashboard](docs/images/complainant-dashboard.jpg)
+![Student Dashboard](docs/images/complainant-dashboard.JPG)
 
 ---
 
 ### 5. Submit Complaint
-![Submit Complaint](docs/images/submit-complaint.jpg)
+![Submit Complaint](docs/images/submit-complaint.JPG)
 
 ---
 
 ### 6. Resolver Dashboard – Active Complaints
-![Resolver Dashboard 1](docs/images/resolver-dashboard1.jpg)
+![Resolver Dashboard 1](docs/images/resolver-dashboard1.JPG)
 
 ---
 
 ### 7. Resolver Dashboard – Resolved Complaints
-![Resolver Dashboard 2](docs/images/resolver-dashboard2.jpg)
+![Resolver Dashboard 2](docs/images/resolver-dashboard2.JPG)
 
 ---
 
 ### 8. Resolver – Sequential Status Update
-![Resolver Status](docs/images/resolver-status.jpg)
+![Resolver Status](docs/images/resolver-status.JPG)
 
 ---
 
 ### 9. Notifications Panel
-![Notifications](docs/images/notifications.jpg)
+![Notifications](docs/images/notifications.JPG)
 
 ---
 
 ### 10. Pending Queries (Resolver)
-![Pending Queries](docs/images/pending-queries.jpg)
+![Pending Queries](docs/images/pending-queries.JPG)
 
 ---
 
 ### 11. Resolver Responses (Manager View)
-![Resolver Responses](docs/images/resolver-responses.jpg)
+![Resolver Responses](docs/images/resolver-responses.JPG)
 
 ---
 
 ### 12. Manager Dashboard – Submitted Tab
-![Manager Dashboard](docs/images/manager-dashboard.jpg)
+![Manager Dashboard](docs/images/manager-dashboard.JPG)
 
 ---
 
 ### 13. Manager – Complaint Statistics
-![Complaint Statistics](docs/images/complaint-statistics.jpg)
+![Complaint Statistics](docs/images/complaint-statistics.JPG)
 
 ---
 
 ### 14. Manager – Resolver Performance
-![Resolver Performance](docs/images/resolver-performance.jpg)
+![Resolver Performance](docs/images/resolver-performance.JPG)
 
 ---
 
 ### 15. Feedback Dialog
-![Feedback](docs/images/complaint-feedback.jpg)
+![Feedback](docs/images/complaint-feedback.JPG)
 
 ---
 
